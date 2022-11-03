@@ -6,7 +6,7 @@ f = open('dinosaurs.json')
 #loads the json as the variable data which makes data a dictionary (this also enables me to access the json objects)
 data = json.load(f)
 #modeSwitch will determine whether or not the the matches (if found) will print a random match or print dinosaur that matches the user input
-modeSwitch = int(input("Please choose how you'd like your results outputted: \n[1.] Random matches \t[2.] All matches \n"))
+modeSwitch = int(input("Please choose how you'd like your results outputted: \n[1.] Random matches (Generate a singular random match) \t[2.] All matches (Generate all available matches) \n"))
 #put it in the while loop so it'll run unless interrupted by keyboard
 while True:
     #create an empty dictionary to store all matching values for the random choice option. This will store the names as keys and descriptions as values.
